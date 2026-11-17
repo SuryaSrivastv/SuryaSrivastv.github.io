@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI/UX Designer | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #202124;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      max-width: 1050px;
+      margin: auto;
+      padding: 28px 24px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    nav a {
+      color: #202124;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+    .hero { padding: 100px 0 90px; }
+    .eyebrow { color: #666; }
+    h1 {
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 16px 0;
+    }
+    h2 { font-size: 32px; }
+    .hero p { max-width: 620px; font-size: 19px; }
+    .button {
+      display: inline-block;
+      background: #202124;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    section { margin-bottom: 90px; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .project {
+      background: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .placeholder {
+      height: 230px;
+      background: #eaeef2;
+      display: grid;
+      place-items: center;
+      color: #666;
+    }
+    .project-content { padding: 24px; }
+    .project h3 { margin: 0; }
+    footer { border-top: 1px solid #ddd; }
+    @media (max-width: 650px) {
+      .projects { grid-template-columns: 1fr; }
+      .hero { padding: 65px 0; }
+      nav a { margin-left: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Portfolio.</strong>
+      <div>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Senior UI/UX Designer</div>
+      <h1>Designing thoughtful<br>digital experiences.</h1>
+      <p>
+        I'm a UI/UX designer with 8+ years of
+        experience designing intuitive interfaces,
+        enterprise applications, and digital products.
+      </p>
+      <a class="button" href="#work">Explore my work</a>
+    </section>
+
+    <section id="work">
+      <h2>Selected Work</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="placeholder">Project image coming soon</div>
+          <div class="project-content">
+            <h3>SITRAIN</h3>
+            <p>Enterprise learning and training platform</p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="placeholder">Project image coming soon</div>
+          <div class="project-content">
+            <h3>Learning Experience Platform</h3>
+            <p>Learning management experience design</p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="placeholder">Project image coming soon</div>
+          <div class="project-content">
+            <h3>Analytics Dashboard</h3>
+            <p>Data visualization and dashboard UI</p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="placeholder">Project image coming soon</div>
+          <div class="project-content">
+            <h3>Conversational AI</h3>
+            <p>Chatbot interface and interaction design</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I design user-friendly digital experiences,
+        combining visual design, interaction design,
+        and product thinking.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>Interested in working together? Let's talk.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 UI/UX Design Portfolio
+  </footer>
+</body>
+</html>
